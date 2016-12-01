@@ -1,7 +1,7 @@
 # custom serialization idea for mORMot
 This simple program is my attempt to show problems with current state of serialization/deserialization in mORMot framework.
 
-Writing custom serializers requires lots of code duplication from synCommons.pas and or mORMot.pas. Even if you want to change the way serialization/deserialization works for only few types you have to rewrite almost everything.
+Writing custom serializers requires lots of code duplication from synCommons.pas and/or mORMot.pas. Even if you want to change the way serialization/deserialization works for only few types you have to rewrite almost everything.
 
 Main idea:
 * register separate readers and writers for every type and use them from registry. This way user can fine tune just the parts he needs, without code duplication. 
